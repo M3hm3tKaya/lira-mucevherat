@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-gold: #C9A96E;
+  --color-gold-light: #D4B87A;
+  --color-cream: #F5F0E8;
+  --color-card: #0A0A0A;
+  --color-border: #1A1A1A;
+  --font-playfair: var(--font-playfair);
+  --font-inter: var(--font-inter);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  color: #F5F0E8;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #C9A96E;
+  color: #000000;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9A96E;
+  border-radius: 0px;
+}
+
+@keyframes slowZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.03);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes goldGlow {
+  0%, 100% {
+    box-shadow: 0 0 30px rgba(201, 169, 110, 0.15), 0 0 60px rgba(201, 169, 110, 0.08);
+  }
+  50% {
+    box-shadow: 0 0 50px rgba(201, 169, 110, 0.25), 0 0 100px rgba(201, 169, 110, 0.12);
+  }
+}
+
+.animate-slow-zoom {
+  animation: slowZoom 10s ease-in-out infinite alternate;
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(201, 169, 110, 0.08) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 4s ease-in-out infinite;
+}
+
+.animate-gold-glow {
+  animation: goldGlow 5s ease-in-out infinite;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #C9A96E 0%, #D4B87A 50%, #C9A96E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-border-bottom {
+  border-bottom: 1px solid #1A1A1A;
+  transition: border-color 1.2s ease;
+}
+
+.gold-border-bottom:focus {
+  border-color: #C9A96E;
+  outline: none;
+}
+
+.image-placeholder {
+  background: linear-gradient(145deg, #0A0A0A 0%, #1A1A1A 50%, #0A0A0A 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.image-placeholder::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    145deg,
+    transparent 0%,
+    rgba(201, 169, 110, 0.04) 50%,
+    transparent 100%
+  );
+}
