@@ -7,21 +7,21 @@ import AnimatedSection from "@/components/AnimatedSection";
 const steps = [
   {
     number: "01",
-    title: "Gorusme & Hayal",
+    title: "Görüşme & Hayal",
     description:
-      "Hayalinizdeki mucevheri anlatin. Ilham kaynaklarinizi, tarzinizi ve beklentilerinizi birlikte konusalim. Ilk gorusmemiz magazamizda veya online olabilir.",
+      "Hayalinizdeki mücevheri anlatın. İlham kaynaklarınızı, tarzınızı ve beklentilerinizi birlikte konuşalım. İlk görüşmemiz mağazamızda veya online olabilir.",
   },
   {
     number: "02",
-    title: "Tasarim & Prototip",
+    title: "Tasarım & Prototip",
     description:
-      "Usta tasarimcimiz, fikirlerinizi krokiye dokecek. 3D modelleme ve mum prototip ile tasarimi onaylayacaksiniz. Her detay sizin onayinizla sekillenir.",
+      "Usta tasarımcımız, fikirlerinizi krokiye dökecek. 3D modelleme ve mum prototip ile tasarımı onaylayacaksınız. Her detay sizin onayınızla şekillenir.",
   },
   {
     number: "03",
-    title: "Uretim & Teslim",
+    title: "Üretim & Teslim",
     description:
-      "Onaylanan tasarim, atölyemizde usta ellere emanet edilir. 4-8 haftalik ozenli uretim surecinin ardindan, esiz parcaniz sertifikasiyla teslim edilir.",
+      "Onaylanan tasarım, atölyemizde usta ellere emanet edilir. 4-8 haftalık özenli üretim sürecinin ardından, eşsiz parçanız sertifikasıyla teslim edilir.",
   },
 ];
 
@@ -47,7 +47,7 @@ export default function IsmarlamaPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Talebiniz alindi. En kisa surede sizinle iletisime gececegiz.");
+    alert("Talebiniz alındı. En kısa sürede sizinle iletişime geçeceğiz.");
   };
 
   return (
@@ -61,18 +61,18 @@ export default function IsmarlamaPage() {
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
           >
             <span className="text-[11px] tracking-[0.4em] text-gold/60 uppercase block mb-4">
-              Ismarlama Tasarim
+              Ismarlama Tasarım
             </span>
             <h1
               className="text-4xl lg:text-6xl text-cream mb-6"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Sizin Icin, Size Ozel
+              Sizin İçin, Size Özel
             </h1>
             <p className="text-cream/50 max-w-xl mx-auto leading-relaxed">
-              Hayalinizdeki mucevheri, usta zanaatkarlarimizla birlikte
-              tasarlayip hayata geciriyoruz. Her parca, benzersiz bir hikaye
-              anlatiyor.
+              Hayalinizdeki mücevheri, usta zanaatkarlarımızla birlikte
+              tasarlayıp hayata geçiriyoruz. Her parça, benzersiz bir hikaye
+              anlatıyor.
             </p>
           </motion.div>
         </div>
@@ -125,7 +125,7 @@ export default function IsmarlamaPage() {
                 className="text-2xl lg:text-3xl text-cream"
                 style={{ fontFamily: "var(--font-playfair)" }}
               >
-                Hayalinizi Paylasin
+                Hayalinizi Paylaşın
               </h2>
             </div>
           </AnimatedSection>
@@ -136,7 +136,7 @@ export default function IsmarlamaPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <label className="block text-[11px] tracking-[0.2em] uppercase text-gold/60 mb-3">
-                    Isim Soyisim
+                    İsim Soyisim
                   </label>
                   <input
                     type="text"
@@ -145,7 +145,7 @@ export default function IsmarlamaPage() {
                     value={formData.name}
                     onChange={handleChange}
                     className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm"
-                    placeholder="Adiniz Soyadiniz"
+                    placeholder="Adınız Soyadınız"
                   />
                 </div>
                 <div>
@@ -184,7 +184,7 @@ export default function IsmarlamaPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <label className="block text-[11px] tracking-[0.2em] uppercase text-gold/60 mb-3">
-                    Mucevher Turu
+                    Mücevher Türü
                   </label>
                   <select
                     name="jewelryType"
@@ -194,10 +194,10 @@ export default function IsmarlamaPage() {
                     className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm appearance-none cursor-pointer"
                   >
                     <option value="" className="bg-black">
-                      Secin...
+                      Seçin...
                     </option>
                     <option value="yuzuk" className="bg-black">
-                      Yuzuk
+                      Yüzük
                     </option>
                     <option value="kolye" className="bg-black">
                       Kolye
@@ -206,13 +206,13 @@ export default function IsmarlamaPage() {
                       Bilezik
                     </option>
                     <option value="kupe" className="bg-black">
-                      Kupe
+                      Küpe
                     </option>
                     <option value="set" className="bg-black">
                       Set
                     </option>
                     <option value="diger" className="bg-black">
-                      Diger
+                      Diğer
                     </option>
                   </select>
                 </div>
@@ -227,28 +227,28 @@ export default function IsmarlamaPage() {
                     className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm appearance-none cursor-pointer"
                   >
                     <option value="" className="bg-black">
-                      Secin...
+                      Seçin...
                     </option>
                     <option value="14-ayar" className="bg-black">
-                      14 Ayar Altin
+                      14 Ayar Altın
                     </option>
                     <option value="18-ayar" className="bg-black">
-                      18 Ayar Altin
+                      18 Ayar Altın
                     </option>
                     <option value="22-ayar" className="bg-black">
-                      22 Ayar Altin
+                      22 Ayar Altın
                     </option>
                     <option value="24-ayar" className="bg-black">
-                      24 Ayar Altin
+                      24 Ayar Altın
                     </option>
                     <option value="platin" className="bg-black">
                       Platin
                     </option>
                     <option value="rose" className="bg-black">
-                      Rose Altin
+                      Rose Altın
                     </option>
                     <option value="beyaz" className="bg-black">
-                      Beyaz Altin
+                      Beyaz Altın
                     </option>
                   </select>
                 </div>
@@ -267,16 +267,16 @@ export default function IsmarlamaPage() {
                     className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm appearance-none cursor-pointer"
                   >
                     <option value="" className="bg-black">
-                      Secin...
+                      Seçin...
                     </option>
                     <option value="pirlanta" className="bg-black">
-                      Pirlanta
+                      Pırlanta
                     </option>
                     <option value="yakut" className="bg-black">
                       Yakut
                     </option>
                     <option value="zumrut" className="bg-black">
-                      Zumrut
+                      Zümrüt
                     </option>
                     <option value="safir" className="bg-black">
                       Safir
@@ -285,16 +285,16 @@ export default function IsmarlamaPage() {
                       Turkuaz
                     </option>
                     <option value="yok" className="bg-black">
-                      Tassiz
+                      Taşsız
                     </option>
                     <option value="diger" className="bg-black">
-                      Diger
+                      Diğer
                     </option>
                   </select>
                 </div>
                 <div>
                   <label className="block text-[11px] tracking-[0.2em] uppercase text-gold/60 mb-3">
-                    Butce Araligi
+                    Bütçe Aralığı
                   </label>
                   <select
                     name="budget"
@@ -303,7 +303,7 @@ export default function IsmarlamaPage() {
                     className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm appearance-none cursor-pointer"
                   >
                     <option value="" className="bg-black">
-                      Secin...
+                      Seçin...
                     </option>
                     <option value="10-25k" className="bg-black">
                       10.000 - 25.000 TL
@@ -318,7 +318,7 @@ export default function IsmarlamaPage() {
                       100.000 - 250.000 TL
                     </option>
                     <option value="250k+" className="bg-black">
-                      250.000 TL ve uzeri
+                      250.000 TL ve üzeri
                     </option>
                   </select>
                 </div>
@@ -327,7 +327,7 @@ export default function IsmarlamaPage() {
               {/* Description */}
               <div>
                 <label className="block text-[11px] tracking-[0.2em] uppercase text-gold/60 mb-3">
-                  Aciklama
+                  Açıklama
                 </label>
                 <textarea
                   name="description"
@@ -335,7 +335,7 @@ export default function IsmarlamaPage() {
                   value={formData.description}
                   onChange={handleChange}
                   className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm resize-none"
-                  placeholder="Hayalinizdeki mucevheri tarif edin... Ilham kaynaklari, ozel detaylar, onem verdiginiz noktalar..."
+                  placeholder="Hayalinizdeki mücevheri tarif edin... İlham kaynakları, özel detaylar, önem verdiğiniz noktalar..."
                 />
               </div>
 
@@ -345,7 +345,7 @@ export default function IsmarlamaPage() {
                   type="submit"
                   className="inline-block px-12 py-4 bg-gold text-black text-[11px] tracking-[0.3em] uppercase font-medium hover:bg-gold-light transition-colors duration-1000"
                 >
-                  Talep Gonderin
+                  Talep Gönderin
                 </button>
               </div>
             </form>

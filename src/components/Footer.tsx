@@ -14,11 +14,11 @@ export default function Footer() {
               LIRA
             </h3>
             <p className="text-[10px] tracking-[0.35em] text-gold/60 uppercase mb-6">
-              Mucevherat &bull; 1987&apos;den beri
+              Mücevherat &bull; 1987&apos;den beri
             </p>
             <p className="text-sm text-cream/50 leading-relaxed max-w-[280px]">
-              Uc kusaktir Nisantasi&apos;nda, el yapimi mucevherlerin en ince
-              detaylarini ustalarin ellerinde seklendiriyoruz.
+              Üç kuşaktır Nişantaşı&apos;nda, el yapımı mücevherlerin en ince
+              detaylarını ustaların ellerinde şekillendiriyoruz.
             </p>
           </div>
 
@@ -34,9 +34,9 @@ export default function Footer() {
               {[
                 { href: "/koleksiyonlar", label: "Koleksiyonlar" },
                 { href: "/atolye", label: "Atolye & Hikaye" },
-                { href: "/ismarlama", label: "Ismarlama Tasarim" },
-                { href: "/magaza", label: "Magaza" },
-                { href: "/iletisim", label: "Iletisim" },
+                { href: "/ismarlama", label: "Ismarlama Tasarım" },
+                { href: "/magaza", label: "Mağaza" },
+                { href: "/iletisim", label: "İletişim" },
               ].map((link) => (
                 <Link
                   key={link.href}
@@ -83,11 +83,11 @@ export default function Footer() {
               className="text-xs tracking-[0.25em] uppercase text-gold mb-6"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Iletisim
+              İletişim
             </h4>
             <div className="flex flex-col gap-3 text-sm text-cream/50">
-              <p>Nisantasi Mah. Abdi Ipekci Cad.</p>
-              <p>No: 42/A, Sisli / Istanbul</p>
+              <p>Nişantaşı Mah. Abdi İpekçi Cad.</p>
+              <p>No: 42/A, Şişli / İstanbul</p>
               <p className="mt-2">+90 212 240 87 87</p>
               <p>info@liramucevherat.com</p>
               <div className="mt-4 flex gap-4">
@@ -105,10 +105,10 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[11px] text-cream/30 tracking-wider">
-            &copy; 2024 Lira Mucevherat. Tum haklari saklidir.
+            &copy; 2024 Lira Mücevherat. Tüm hakları saklıdır.
           </p>
           <p className="text-[11px] text-cream/30 tracking-wider">
-            Nisantasi, Istanbul &bull; 1987&apos;den beri
+            Nişantaşı, İstanbul &bull; 1987&apos;den beri
           </p>
         </div>
       </div>

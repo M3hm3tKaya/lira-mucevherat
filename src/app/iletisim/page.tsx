@@ -23,7 +23,7 @@ export default function IletisimPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Mesajiniz alindi. En kisa surede size donecegiz.");
+    alert("Mesajınız alındı. En kısa sürede size döneceğiz.");
   };
 
   return (
@@ -37,17 +37,17 @@ export default function IletisimPage() {
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
           >
             <span className="text-[11px] tracking-[0.4em] text-gold/60 uppercase block mb-4">
-              Iletisim
+              İletişim
             </span>
             <h1
               className="text-4xl lg:text-6xl text-cream mb-6"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Bize Ulasin
+              Bize Ulaşın
             </h1>
             <p className="text-cream/50 max-w-xl mx-auto leading-relaxed">
-              Sorulariniz, randevu talepleriniz veya ozel siparisleriniz icin
-              bize ulasin.
+              Sorularınız, randevu talepleriniz veya özel siparişleriniz için
+              bize ulaşın.
             </p>
           </motion.div>
         </div>
@@ -87,11 +87,11 @@ export default function IletisimPage() {
                         Adres
                       </h3>
                       <p className="text-sm text-cream/50 leading-relaxed">
-                        Nisantasi Mah. Abdi Ipekci Cad.
+                        Nişantaşı Mah. Abdi İpekçi Cad.
                         <br />
-                        No: 42/A, Sisli
+                        No: 42/A, Şişli
                         <br />
-                        34367 Istanbul, Turkiye
+                        34367 İstanbul, Türkiye
                       </p>
                     </div>
                   </div>
@@ -198,7 +198,7 @@ export default function IletisimPage() {
                         className="text-sm text-cream mb-2 tracking-wider uppercase"
                         style={{ fontFamily: "var(--font-playfair)" }}
                       >
-                        Calisma Saatleri
+                        Çalışma Saatleri
                       </h3>
                       <div className="text-sm text-cream/50 space-y-1">
                         <p>Pazartesi - Cuma: 10:00 - 19:00</p>
@@ -266,14 +266,14 @@ export default function IletisimPage() {
                     className="text-xl lg:text-2xl text-cream mb-8"
                     style={{ fontFamily: "var(--font-playfair)" }}
                   >
-                    Mesaj Gonderin
+                    Mesaj Gönderin
                   </h2>
 
                   <form onSubmit={handleSubmit} className="space-y-7">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
                       <div>
                         <label className="block text-[11px] tracking-[0.2em] uppercase text-gold/60 mb-3">
-                          Isim Soyisim
+                          İsim Soyisim
                         </label>
                         <input
                           type="text"
@@ -282,7 +282,7 @@ export default function IletisimPage() {
                           value={formData.name}
                           onChange={handleChange}
                           className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm"
-                          placeholder="Adiniz Soyadiniz"
+                          placeholder="Adınız Soyadınız"
                         />
                       </div>
                       <div>
@@ -327,29 +327,29 @@ export default function IletisimPage() {
                         className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm appearance-none cursor-pointer"
                       >
                         <option value="" className="bg-black">
-                          Konu secin...
+                          Konu seçin...
                         </option>
                         <option value="randevu" className="bg-black">
                           Randevu Talebi
                         </option>
                         <option value="koleksiyon" className="bg-black">
-                          Koleksiyon Hakkinda
+                          Koleksiyon Hakkında
                         </option>
                         <option value="ismarlama" className="bg-black">
-                          Ismarlama Tasarim
+                          Ismarlama Tasarım
                         </option>
                         <option value="fiyat" className="bg-black">
                           Fiyat Bilgisi
                         </option>
                         <option value="diger" className="bg-black">
-                          Diger
+                          Diğer
                         </option>
                       </select>
                     </div>
 
                     <div>
                       <label className="block text-[11px] tracking-[0.2em] uppercase text-gold/60 mb-3">
-                        Mesajiniz
+                        Mesajınız
                       </label>
                       <textarea
                         name="message"
@@ -358,7 +358,7 @@ export default function IletisimPage() {
                         value={formData.message}
                         onChange={handleChange}
                         className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm resize-none"
-                        placeholder="Mesajinizi buraya yazin..."
+                        placeholder="Mesajınızı buraya yazın..."
                       />
                     </div>
 
@@ -367,7 +367,7 @@ export default function IletisimPage() {
                         type="submit"
                         className="w-full lg:w-auto px-12 py-4 bg-gold text-black text-[11px] tracking-[0.3em] uppercase font-medium hover:bg-gold-light transition-colors duration-1000"
                       >
-                        Mesaj Gonderin
+                        Mesaj Gönderin
                       </button>
                     </div>
                   </form>

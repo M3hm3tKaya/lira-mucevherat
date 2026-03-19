@@ -13,9 +13,9 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const collection = getCollectionBySlug(slug);
-  if (!collection) return { title: "Koleksiyon Bulunamadi" };
+  if (!collection) return { title: "Koleksiyon Bulunamadı" };
   return {
-    title: `${collection.name} | Lira Mucevherat`,
+    title: `${collection.name} | Lira Mücevherat`,
     description: collection.description,
   };
 }

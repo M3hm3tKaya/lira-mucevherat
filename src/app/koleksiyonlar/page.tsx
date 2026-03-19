@@ -18,7 +18,7 @@ export default function KoleksiyonlarPage() {
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
           >
             <span className="text-[11px] tracking-[0.4em] text-gold/60 uppercase block mb-4">
-              Tum Koleksiyonlar
+              Tüm Koleksiyonlar
             </span>
             <h1
               className="text-4xl lg:text-6xl text-cream mb-6"
@@ -27,8 +27,8 @@ export default function KoleksiyonlarPage() {
               Koleksiyonlar
             </h1>
             <p className="text-cream/50 max-w-lg mx-auto leading-relaxed">
-              Her koleksiyon, farkli bir hikaye anlatiyor. Zamanin otesinde
-              tasarimlari kesfedin.
+              Her koleksiyon, farklı bir hikaye anlatıyor. Zamanın ötesinde
+              tasarımları keşfedin.
             </p>
           </motion.div>
         </div>
@@ -72,7 +72,7 @@ export default function KoleksiyonlarPage() {
                         {col.description}
                       </p>
                       <div className="mt-6 flex items-center gap-3 text-gold text-[11px] tracking-[0.2em] uppercase opacity-60 group-hover:opacity-100 transition-opacity duration-1000">
-                        <span>Koleksiyonu Goruntule</span>
+                        <span>Koleksiyonu Görüntüle</span>
                         <svg
                           width="24"
                           height="8"

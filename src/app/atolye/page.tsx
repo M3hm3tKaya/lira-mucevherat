@@ -7,66 +7,66 @@ import ImagePlaceholder from "@/components/ImagePlaceholder";
 const timeline = [
   {
     year: "1987",
-    title: "Baslangic",
+    title: "Başlangıç",
     description:
-      "Usta Ahmet Lira, Nisantasi'nda kucuk bir atolyede el yapimi mucevher uretmeye baslar. Geleneksel Turk kuyumculuk sanatini yasatma tutkusuyla yola cikar.",
+      "Usta Ahmet Lira, Nişantaşı'nda küçük bir atölyede el yapımı mücevher üretmeye başlar. Geleneksel Türk kuyumculuk sanatını yaşatma tutkusuyla yola çıkar.",
   },
   {
     year: "1995",
-    title: "Ilk Koleksiyon",
+    title: "İlk Koleksiyon",
     description:
-      "Bizantion koleksiyonu ile ulusal taninirlik kazanilir. Bizans orgu teknigi modern cizgilerle bulusturulur ve buyuk ilgi gorur.",
+      "Bizantion koleksiyonu ile ulusal tanınırlık kazanılır. Bizans örgü tekniği modern çizgilerle buluşturulur ve büyük ilgi görür.",
   },
   {
     year: "2005",
-    title: "Ikinci Kusak",
+    title: "İkinci Kuşak",
     description:
-      "Mehmet Lira isletmeye dahil olur. Aile gelenegi modern vizyonla harmanlanir. Nisantasi'ndaki flagship magaza acilir.",
+      "Mehmet Lira işletmeye dahil olur. Aile geleneği modern vizyonla harmanlanır. Nişantaşı'ndaki flagship mağaza açılır.",
   },
   {
     year: "2015",
-    title: "Uluslararasi Taninirlirlik",
+    title: "Uluslararası Tanınırlık",
     description:
-      "Basel ve Paris mucevher fuarlarinda Turkiye'yi temsil eder. Moderna koleksiyonu uluslararasi odullerle taninir.",
+      "Basel ve Paris mücevher fuarlarında Türkiye'yi temsil eder. Moderna koleksiyonu uluslararası ödüllerle tanınır.",
   },
   {
     year: "2020",
-    title: "Ucuncu Kusak",
+    title: "Üçüncü Kuşak",
     description:
-      "Elif Lira, dijital tasarim yeteneklerini geleneksel zanaata katar. Atelier sinirli seri koleksiyonu lansman yapilir.",
+      "Elif Lira, dijital tasarım yeteneklerini geleneksel zanaata katar. Atelier sınırlı seri koleksiyonu lansman yapılır.",
   },
   {
     year: "2024",
-    title: "Bugun",
+    title: "Bugün",
     description:
-      "Uc kusak bir arada, gelenegi gelecege tasiyoruz. Her parca, yuzlerce yillik bilginin ve tutkulu iscilin urunudur.",
+      "Üç kuşak bir arada, geleneği geleceğe taşıyoruz. Her parça, yüzlerce yıllık bilginin ve tutkulu işçiliğin ürünüdür.",
   },
 ];
 
 const productionSteps = [
   {
     step: "01",
-    title: "Tasarim & Cizim",
+    title: "Tasarım & Çizim",
     description:
-      "Her parca, kagit uzerinde ince cizimlerle baslar. Usta tasarimcimiz, her acidan inceleyerek mukemmel proporsiyon ve estetigi yakalar.",
+      "Her parça, kağıt üzerinde ince çizimlerle başlar. Usta tasarımcımız, her açıdan inceleyerek mükemmel proporsiyon ve estetiği yakalar.",
   },
   {
     step: "02",
-    title: "Mum Model & Dokum",
+    title: "Mum Model & Döküm",
     description:
-      "Tasarim, el ile mum modele donusturulur. Kayip mum teknigi ile en ince detaylar korunarak altin veya platin dokumu yapilir.",
+      "Tasarım, el ile mum modele dönüştürülür. Kayıp mum tekniği ile en ince detaylar korunarak altın veya platin dökümü yapılır.",
   },
   {
     step: "03",
-    title: "Tas Yerlesimi & Iscilk",
+    title: "Taş Yerleşimi & İşçilik",
     description:
-      "Her pirlanta ve degerli tas, mikroskop altinda titizlikle yerine oturulur. El perdahlama ile yuzey mukemmel parlaklga ulasir.",
+      "Her pırlanta ve değerli taş, mikroskop altında titizlikle yerine oturtulur. El perdahlama ile yüzey mükemmel parlaklığa ulaşır.",
   },
   {
     step: "04",
     title: "Kalite Kontrol & Sunum",
     description:
-      "Her parca, 12 farkli kalite kontrol noktasindan gecer. Ozel kutusu ve sertifikasiyla birlikte sahibine sunulur.",
+      "Her parça, 12 farklı kalite kontrol noktasından geçer. Özel kutusu ve sertifikasıyla birlikte sahibine sunulur.",
   },
 ];
 
@@ -89,11 +89,11 @@ export default function AtolyePage() {
               className="text-4xl lg:text-6xl text-cream mb-6"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Uc Kusak, Bir Tutku
+              Üç Kuşak, Bir Tutku
             </h1>
             <p className="text-cream/50 max-w-xl mx-auto leading-relaxed">
-              1987&apos;den bu yana, her mucevherimizde emegin, tutkuun ve
-              ustalgin izini tasiyoruz.
+              1987&apos;den bu yana, her mücevherimizde emeğin, tutkunun ve
+              ustalığın izini taşıyoruz.
             </p>
           </motion.div>
         </div>
@@ -107,7 +107,7 @@ export default function AtolyePage() {
               className="text-2xl lg:text-3xl text-center text-cream mb-16"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Yolculugumuz
+              Yolculuğumuz
             </h2>
           </AnimatedSection>
 
@@ -171,7 +171,7 @@ export default function AtolyePage() {
           <AnimatedSection>
             <ImagePlaceholder
               aspectRatio="aspect-[21/9]"
-              label="Nisantasi Atölyemiz"
+              label="Nişantaşı Atölyemiz"
               glow
             />
           </AnimatedSection>
@@ -184,13 +184,13 @@ export default function AtolyePage() {
           <AnimatedSection>
             <div className="text-center mb-16 lg:mb-24">
               <span className="text-[11px] tracking-[0.4em] text-gold/60 uppercase block mb-4">
-                Uretim Sureci
+                Üretim Süreci
               </span>
               <h2
                 className="text-3xl lg:text-4xl text-cream"
                 style={{ fontFamily: "var(--font-playfair)" }}
               >
-                Sanatin 4 Asamasi
+                Sanatın 4 Aşaması
               </h2>
             </div>
           </AnimatedSection>

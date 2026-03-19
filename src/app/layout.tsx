@@ -6,9 +6,9 @@ import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Lira Mucevherat | Nisantasi, Istanbul | 1987'den beri",
+  title: "Lira Mücevherat | Nişantaşı, İstanbul | 1987'den beri",
   description:
-    "Uc kusaktir Nisantasi'nda, el yapimi mucevherlerin en ince detaylarini ustalarin ellerinde seklendiriyoruz. Eternite, Bizantion, Moderna koleksiyonlari.",
+    "Üç kuşaktır Nişantaşı'nda, el yapımı mücevherlerin en ince detaylarını ustaların ellerinde şekillendiriyoruz. Eternite, Bizantion, Moderna koleksiyonları.",
 };
 
 export default function RootLayout({

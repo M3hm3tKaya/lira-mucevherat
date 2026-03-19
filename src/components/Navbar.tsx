@@ -11,8 +11,8 @@ const links = [
   { href: "/koleksiyonlar", label: "Koleksiyonlar" },
   { href: "/atolye", label: "Atolye" },
   { href: "/ismarlama", label: "Ismarlama" },
-  { href: "/magaza", label: "Magaza" },
-  { href: "/iletisim", label: "Iletisim" },
+  { href: "/magaza", label: "Mağaza" },
+  { href: "/iletisim", label: "İletişim" },
 ];
 
 export default function Navbar() {
@@ -32,7 +32,7 @@ export default function Navbar() {
               LIRA
             </span>
             <span className="text-[9px] tracking-[0.35em] text-gold/60 uppercase mt-[-2px]">
-              Mucevherat
+              Mücevherat
             </span>
           </Link>
 

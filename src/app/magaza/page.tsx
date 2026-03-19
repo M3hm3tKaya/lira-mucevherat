@@ -6,11 +6,11 @@ import AnimatedSection from "@/components/AnimatedSection";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 
 const storeImages = [
-  { id: 1, label: "Magaza Giris" },
+  { id: 1, label: "Mağaza Giriş" },
   { id: 2, label: "Sergi Alani" },
-  { id: 3, label: "Ozel Gorusme Odasi" },
+  { id: 3, label: "Özel Görüşme Odası" },
   { id: 4, label: "Koleksiyon Vitrini" },
-  { id: 5, label: "Atolye Ici" },
+  { id: 5, label: "Atölye İçi" },
 ];
 
 export default function MagazaPage() {
@@ -37,17 +37,17 @@ export default function MagazaPage() {
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
           >
             <span className="text-[11px] tracking-[0.4em] text-gold/60 uppercase block mb-4">
-              Nisantasi, Istanbul
+              Nişantaşı, İstanbul
             </span>
             <h1
               className="text-4xl lg:text-6xl text-cream mb-6"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Magazamiz
+              Mağazamız
             </h1>
             <p className="text-cream/50 max-w-xl mx-auto leading-relaxed">
-              Nisantasi&apos;nin kalbinde, mucevher sanatina adanmis ozel
-              mekanimimiz sizi bekliyor.
+              Nişantaşı&apos;nın kalbinde, mücevher sanatına adanmış özel
+              mekanımız sizi bekliyor.
             </p>
           </motion.div>
         </div>
@@ -146,11 +146,11 @@ export default function MagazaPage() {
                   Adres
                 </h3>
                 <p className="text-sm text-cream/50 leading-relaxed">
-                  Nisantasi Mah. Abdi Ipekci Cad.
+                  Nişantaşı Mah. Abdi İpekçi Cad.
                   <br />
-                  No: 42/A, Sisli
+                  No: 42/A, Şişli
                   <br />
-                  34367 Istanbul, Turkiye
+                  34367 İstanbul, Türkiye
                 </p>
               </div>
             </AnimatedSection>
@@ -184,7 +184,7 @@ export default function MagazaPage() {
                   className="text-lg text-cream mb-3"
                   style={{ fontFamily: "var(--font-playfair)" }}
                 >
-                  Calisma Saatleri
+                  Çalışma Saatleri
                 </h3>
                 <div className="text-sm text-cream/50 space-y-2">
                   <p>Pazartesi - Cuma: 10:00 - 19:00</p>
@@ -216,7 +216,7 @@ export default function MagazaPage() {
                   className="text-lg text-cream mb-3"
                   style={{ fontFamily: "var(--font-playfair)" }}
                 >
-                  Iletisim
+                  İletişim
                 </h3>
                 <div className="text-sm text-cream/50 space-y-2">
                   <p>+90 212 240 87 87</p>
@@ -251,7 +251,7 @@ export default function MagazaPage() {
                     />
                   </svg>
                   <span className="text-[11px] tracking-[0.3em] text-gold/20 uppercase">
-                    Harita - Nisantasi, Istanbul
+                    Harita - Nişantaşı, İstanbul
                   </span>
                 </div>
               </div>
@@ -268,17 +268,17 @@ export default function MagazaPage() {
               className="text-2xl lg:text-3xl text-cream mb-4"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Magazamiza Davetlisiniz
+              Mağazamıza Davetlisiniz
             </h3>
             <p className="text-cream/50 mb-8">
-              Ozel bir deneyim icin randevu alarak gelin. Size ozel olarak
-              koleksiyonlarimizi sunmaktan memnuniyet duyariz.
+              Özel bir deneyim için randevu alarak gelin. Size özel olarak
+              koleksiyonlarımızı sunmaktan memnuniyet duyarız.
             </p>
             <a
               href="tel:+902122408787"
               className="inline-block px-10 py-4 border border-gold/40 text-gold text-[11px] tracking-[0.3em] uppercase hover:bg-gold hover:text-black transition-all duration-1000"
             >
-              Hemen Arayin
+              Hemen Arayın
             </a>
           </AnimatedSection>
         </div>

@@ -39,7 +39,7 @@ export default function CollectionDetailClient({
                   strokeWidth="0.5"
                 />
               </svg>
-              <span>Tum Koleksiyonlar</span>
+              <span>Tüm Koleksiyonlar</span>
             </Link>
 
             <h1
@@ -64,13 +64,13 @@ export default function CollectionDetailClient({
           <AnimatedSection>
             <div className="text-center mb-16">
               <span className="text-[11px] tracking-[0.4em] text-gold/60 uppercase block mb-3">
-                {collection.products.length} Parca
+                {collection.products.length} Parça
               </span>
               <h2
                 className="text-2xl lg:text-3xl text-cream"
                 style={{ fontFamily: "var(--font-playfair)" }}
               >
-                Koleksiyon Parcalari
+                Koleksiyon Parçaları
               </h2>
             </div>
           </AnimatedSection>
@@ -124,16 +124,16 @@ export default function CollectionDetailClient({
               className="text-2xl lg:text-3xl text-cream mb-4"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Bu Koleksiyondan Bir Parca Edinin
+              Bu Koleksiyondan Bir Parça Edinin
             </h3>
             <p className="text-cream/50 mb-8">
-              Randevu alarak Nisantasi magazamizda koleksiyonu yakindan inceleyin.
+              Randevu alarak Nişantaşı mağazamızda koleksiyonu yakından inceleyin.
             </p>
             <Link
               href="/iletisim"
               className="inline-block px-10 py-4 border border-gold/40 text-gold text-[11px] tracking-[0.3em] uppercase hover:bg-gold hover:text-black transition-all duration-1000"
             >
-              Randevu Alin
+              Randevu Alın
             </Link>
           </AnimatedSection>
         </div>

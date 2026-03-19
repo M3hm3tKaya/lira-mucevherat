@@ -9,25 +9,25 @@ const featuredCollections = [
   {
     slug: "eternite",
     name: "Eternite",
-    slogan: "Sonsuzlugu Tasiyorsunuz",
+    slogan: "Sonsuzluğu Taşıyorsunuz",
   },
   {
     slug: "bizantion",
     name: "Bizantion",
-    slogan: "Imparatorlugun Mirasi",
+    slogan: "İmparatorluğun Mirası",
   },
   {
     slug: "moderna",
     name: "Moderna",
-    slogan: "Bugunu Yasamak",
+    slogan: "Bugünü Yaşamak",
   },
 ];
 
 const pressLogos = [
-  "Vogue Turkiye",
+  "Vogue Türkiye",
   "Harper's Bazaar",
-  "Elle Turkiye",
-  "GQ Turkiye",
+  "Elle Türkiye",
+  "GQ Türkiye",
   "Maison Francaise",
   "Marie Claire",
 ];
@@ -68,7 +68,7 @@ export default function HomePage() {
             transition={{ duration: 1.5, delay: 0.5 }}
           >
             <p className="mt-4 text-[11px] sm:text-[13px] tracking-[0.5em] text-cream/60 uppercase">
-              Mucevherat &bull; 1987&apos;den beri
+              Mücevherat &bull; 1987&apos;den beri
             </p>
           </motion.div>
 
@@ -81,8 +81,8 @@ export default function HomePage() {
               className="mt-8 text-lg sm:text-xl text-cream/50 max-w-md mx-auto leading-relaxed"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Uc kusaktir, Nisantasi&apos;nda sanatin en ince detaylarini
-              seklendiriyoruz.
+              Üç kuşaktır, Nişantaşı&apos;nda sanatın en ince detaylarını
+              şekillendiriyoruz.
             </p>
           </motion.div>
 
@@ -95,7 +95,7 @@ export default function HomePage() {
               href="/koleksiyonlar"
               className="inline-block mt-12 px-10 py-4 border border-gold/40 text-gold text-[11px] tracking-[0.3em] uppercase hover:bg-gold hover:text-black transition-all duration-1000"
             >
-              Koleksiyonlari Kesfet
+              Koleksiyonları Keşfet
             </Link>
           </motion.div>
         </div>
@@ -121,13 +121,13 @@ export default function HomePage() {
           <AnimatedSection>
             <div className="text-center mb-16 lg:mb-24">
               <span className="text-[11px] tracking-[0.4em] text-gold/60 uppercase block mb-4">
-                Seckin Koleksiyonlar
+                Seçkin Koleksiyonlar
               </span>
               <h2
                 className="text-3xl lg:text-5xl text-cream"
                 style={{ fontFamily: "var(--font-playfair)" }}
               >
-                Zamanin Otesinde
+                Zamanın Ötesinde
               </h2>
             </div>
           </AnimatedSection>
@@ -157,7 +157,7 @@ export default function HomePage() {
                         {col.slogan}
                       </p>
                       <div className="mt-4 flex items-center gap-2 text-gold text-[11px] tracking-[0.2em] uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
-                        <span>Kesfet</span>
+                        <span>Keşfet</span>
                         <svg
                           width="16"
                           height="8"
@@ -201,20 +201,20 @@ export default function HomePage() {
                   className="text-3xl lg:text-4xl text-cream mb-6 leading-snug"
                   style={{ fontFamily: "var(--font-playfair)" }}
                 >
-                  Uc Kusaktir,
+                  Üç Kuşaktır,
                   <br />
-                  <span className="gold-gradient-text">Ustaligi Yasatiyoruz</span>
+                  <span className="gold-gradient-text">Ustalığı Yaşatıyoruz</span>
                 </h2>
                 <p className="text-cream/50 leading-relaxed mb-6">
-                  1987&apos;de Usta Ahmet Lira tarafindan kurulan atölyemiz,
-                  bugun ucuncu kusak ile faaliyetlerini surdurmektedir. Her bir
-                  parcamiz, geleneksel kuyumculuk tekniklerinin modern tasarim
-                  anlayisiyla harmanlanmasiyla ortaya cikar.
+                  1987&apos;de Usta Ahmet Lira tarafından kurulan atölyemiz,
+                  bugün üçüncü kuşak ile faaliyetlerini sürdürmektedir. Her bir
+                  parçamız, geleneksel kuyumculuk tekniklerinin modern tasarım
+                  anlayışıyla harmanlanmasıyla ortaya çıkar.
                 </p>
                 <p className="text-cream/50 leading-relaxed mb-8">
-                  Nisantasi&apos;ndaki atölyemizde, yalnizca en kaliteli
-                  malzemelerle ve yuzlerce saatlik el emegi ile mucevherler
-                  uretiyoruz. Her parca, bir sanat eseri olarak dunyaya gelir.
+                  Nişantaşı&apos;ndaki atölyemizde, yalnızca en kaliteli
+                  malzemelerle ve yüzlerce saatlik el emeği ile mücevherler
+                  üretiyoruz. Her parça, bir sanat eseri olarak dünyaya gelir.
                 </p>
                 <Link
                   href="/atolye"
@@ -249,26 +249,26 @@ export default function HomePage() {
         <div className="relative z-10 max-w-[800px] mx-auto px-6 text-center">
           <AnimatedSection>
             <span className="text-[11px] tracking-[0.4em] text-gold/60 uppercase block mb-4">
-              Ismarlama Tasarim
+              Ismarlama Tasarım
             </span>
             <h2
               className="text-3xl lg:text-5xl text-cream mb-6 leading-snug"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Hayalinizdeki Mucevheri
+              Hayalinizdeki Mücevheri
               <br />
-              <span className="gold-gradient-text">Birlikte Tasarlayalim</span>
+              <span className="gold-gradient-text">Birlikte Tasarlayalım</span>
             </h2>
             <p className="text-cream/50 leading-relaxed max-w-lg mx-auto mb-10">
-              Tek ve benzersiz bir parca mi istiyorsunuz? Usta
-              tasarimcilarimizla birlikte, hayalinizdeki mucevheri gercege
-              donusturun.
+              Tek ve benzersiz bir parça mı istiyorsunuz? Usta
+              tasarımcılarımızla birlikte, hayalinizdeki mücevheri gerçeğe
+              dönüştürün.
             </p>
             <Link
               href="/ismarlama"
               className="inline-block px-10 py-4 bg-gold text-black text-[11px] tracking-[0.3em] uppercase font-medium hover:bg-gold-light transition-colors duration-1000"
             >
-              Ismarlama Surecini Baslatin
+              Ismarlama Sürecini Başlatın
             </Link>
           </AnimatedSection>
         </div>
@@ -279,7 +279,7 @@ export default function HomePage() {
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
           <AnimatedSection>
             <p className="text-center text-[11px] tracking-[0.4em] text-cream/30 uppercase mb-10">
-              Basinda Biz
+              Basında Biz
             </p>
             <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-16">
               {pressLogos.map((logo) => (
