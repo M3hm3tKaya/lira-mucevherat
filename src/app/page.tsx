@@ -48,14 +48,14 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black" />
 
         {/* Hero content */}
-        <div className="relative z-10 text-center px-6">
+        <div className="relative z-10 text-center px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
           >
             <h1
-              className="text-7xl sm:text-8xl lg:text-[140px] font-bold tracking-[0.25em] gold-gradient-text leading-none"
+              className="text-5xl sm:text-7xl md:text-8xl lg:text-[140px] font-bold tracking-[0.15em] sm:tracking-[0.25em] gold-gradient-text leading-none"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
               LIRA
@@ -93,7 +93,7 @@ export default function HomePage() {
           >
             <Link
               href="/koleksiyonlar"
-              className="inline-block mt-12 px-10 py-4 border border-gold/40 text-gold text-[11px] tracking-[0.3em] uppercase hover:bg-gold hover:text-black transition-all duration-1000"
+              className="inline-block mt-8 sm:mt-12 px-8 sm:px-10 py-4 border border-gold/40 text-gold text-[11px] tracking-[0.3em] uppercase hover:bg-gold hover:text-black transition-all duration-1000 min-h-[44px]"
             >
               Koleksiyonları Keşfet
             </Link>
@@ -116,15 +116,15 @@ export default function HomePage() {
       </section>
 
       {/* ========== 3 COLLECTIONS PREVIEW ========== */}
-      <section className="py-24 lg:py-32">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+      <section className="py-16 sm:py-20 lg:py-32">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <AnimatedSection>
-            <div className="text-center mb-16 lg:mb-24">
+            <div className="text-center mb-10 sm:mb-16 lg:mb-24">
               <span className="text-[11px] tracking-[0.4em] text-gold/60 uppercase block mb-4">
                 Seçkin Koleksiyonlar
               </span>
               <h2
-                className="text-3xl lg:text-5xl text-cream"
+                className="text-2xl sm:text-3xl lg:text-5xl text-cream"
                 style={{ fontFamily: "var(--font-playfair)" }}
               >
                 Zamanın Ötesinde
@@ -132,7 +132,7 @@ export default function HomePage() {
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-4">
             {featuredCollections.map((col, i) => (
               <AnimatedSection key={col.slug} delay={i * 0.2}>
                 <Link
@@ -146,7 +146,7 @@ export default function HomePage() {
                       className="transition-transform duration-[2000ms] group-hover:scale-[1.03]"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-                    <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
+                    <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 lg:p-8">
                       <h3
                         className="text-2xl lg:text-3xl text-cream mb-2"
                         style={{ fontFamily: "var(--font-playfair)" }}
@@ -181,9 +181,9 @@ export default function HomePage() {
       </section>
 
       {/* ========== ATELIER STORY ========== */}
-      <section className="py-24 lg:py-32 bg-card">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <section className="py-16 sm:py-20 lg:py-32 bg-card">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center">
             <AnimatedSection direction="left">
               <ImagePlaceholder
                 aspectRatio="aspect-[4/5]"
@@ -198,7 +198,7 @@ export default function HomePage() {
                   Hikayemiz
                 </span>
                 <h2
-                  className="text-3xl lg:text-4xl text-cream mb-6 leading-snug"
+                  className="text-2xl sm:text-3xl lg:text-4xl text-cream mb-6 leading-snug"
                   style={{ fontFamily: "var(--font-playfair)" }}
                 >
                   Üç Kuşaktır,
@@ -218,7 +218,7 @@ export default function HomePage() {
                 </p>
                 <Link
                   href="/atolye"
-                  className="inline-flex items-center gap-3 text-gold text-[11px] tracking-[0.25em] uppercase group"
+                  className="inline-flex items-center gap-3 text-gold text-[11px] tracking-[0.25em] uppercase group py-3 min-h-[44px]"
                 >
                   <span>Hikayemizi Okuyun</span>
                   <svg
@@ -242,17 +242,17 @@ export default function HomePage() {
       </section>
 
       {/* ========== BESPOKE CTA ========== */}
-      <section className="py-24 lg:py-32 relative overflow-hidden">
+      <section className="py-16 sm:py-20 lg:py-32 relative overflow-hidden">
         <div className="absolute inset-0 image-placeholder opacity-30" />
         <div className="absolute inset-0 bg-black/80" />
 
-        <div className="relative z-10 max-w-[800px] mx-auto px-6 text-center">
+        <div className="relative z-10 max-w-[800px] mx-auto px-4 sm:px-6 text-center">
           <AnimatedSection>
             <span className="text-[11px] tracking-[0.4em] text-gold/60 uppercase block mb-4">
               Ismarlama Tasarım
             </span>
             <h2
-              className="text-3xl lg:text-5xl text-cream mb-6 leading-snug"
+              className="text-2xl sm:text-3xl lg:text-5xl text-cream mb-6 leading-snug"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
               Hayalinizdeki Mücevheri
@@ -266,7 +266,7 @@ export default function HomePage() {
             </p>
             <Link
               href="/ismarlama"
-              className="inline-block px-10 py-4 bg-gold text-black text-[11px] tracking-[0.3em] uppercase font-medium hover:bg-gold-light transition-colors duration-1000"
+              className="inline-block px-8 sm:px-10 py-4 bg-gold text-black text-[11px] tracking-[0.3em] uppercase font-medium hover:bg-gold-light transition-colors duration-1000 min-h-[44px]"
             >
               Ismarlama Sürecini Başlatın
             </Link>
@@ -275,13 +275,13 @@ export default function HomePage() {
       </section>
 
       {/* ========== PRESS STRIP ========== */}
-      <section className="py-16 lg:py-20 border-y border-border">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+      <section className="py-12 sm:py-16 lg:py-20 border-y border-border">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <AnimatedSection>
             <p className="text-center text-[11px] tracking-[0.4em] text-cream/30 uppercase mb-10">
               Basında Biz
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-16">
+            <div className="flex flex-wrap items-center justify-center gap-5 sm:gap-8 lg:gap-16">
               {pressLogos.map((logo) => (
                 <span
                   key={logo}

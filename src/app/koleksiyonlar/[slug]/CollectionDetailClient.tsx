@@ -18,11 +18,11 @@ export default function CollectionDetailClient({
   return (
     <>
       {/* Hero */}
-      <section className="relative py-24 lg:py-36 overflow-hidden">
+      <section className="relative py-16 sm:py-24 lg:py-36 overflow-hidden">
         <div className="absolute inset-0 image-placeholder opacity-40" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black" />
 
-        <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -30,7 +30,7 @@ export default function CollectionDetailClient({
           >
             <Link
               href="/koleksiyonlar"
-              className="inline-flex items-center gap-2 text-gold/60 text-[11px] tracking-[0.2em] uppercase mb-8 hover:text-gold transition-colors duration-700"
+              className="inline-flex items-center gap-2 text-gold/60 text-[11px] tracking-[0.2em] uppercase mb-6 sm:mb-8 hover:text-gold transition-colors duration-700 min-h-[44px]"
             >
               <svg width="16" height="8" viewBox="0 0 16 8" fill="none">
                 <path
@@ -43,7 +43,7 @@ export default function CollectionDetailClient({
             </Link>
 
             <h1
-              className="text-5xl lg:text-7xl gold-gradient-text mb-4"
+              className="text-3xl sm:text-5xl lg:text-7xl gold-gradient-text mb-4"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
               {collection.name}
@@ -59,10 +59,10 @@ export default function CollectionDetailClient({
       </section>
 
       {/* Product Grid */}
-      <section className="py-20 lg:py-28">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+      <section className="py-14 sm:py-20 lg:py-28">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <AnimatedSection>
-            <div className="text-center mb-16">
+            <div className="text-center mb-10 sm:mb-16">
               <span className="text-[11px] tracking-[0.4em] text-gold/60 uppercase block mb-3">
                 {collection.products.length} Parça
               </span>
@@ -75,7 +75,7 @@ export default function CollectionDetailClient({
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {collection.products.map((product, i) => (
               <AnimatedSection key={product.id} delay={i * 0.1}>
                 <button
@@ -117,8 +117,8 @@ export default function CollectionDetailClient({
       </section>
 
       {/* CTA */}
-      <section className="py-20 lg:py-24 border-t border-border">
-        <div className="max-w-[800px] mx-auto px-6 text-center">
+      <section className="py-14 sm:py-20 lg:py-24 border-t border-border">
+        <div className="max-w-[800px] mx-auto px-4 sm:px-6 text-center">
           <AnimatedSection>
             <h3
               className="text-2xl lg:text-3xl text-cream mb-4"
@@ -131,7 +131,7 @@ export default function CollectionDetailClient({
             </p>
             <Link
               href="/iletisim"
-              className="inline-block px-10 py-4 border border-gold/40 text-gold text-[11px] tracking-[0.3em] uppercase hover:bg-gold hover:text-black transition-all duration-1000"
+              className="inline-block px-8 sm:px-10 py-4 border border-gold/40 text-gold text-[11px] tracking-[0.3em] uppercase hover:bg-gold hover:text-black transition-all duration-1000 min-h-[44px]"
             >
               Randevu Alın
             </Link>

@@ -74,8 +74,8 @@ export default function AtolyePage() {
   return (
     <>
       {/* Hero */}
-      <section className="py-20 lg:py-28">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+      <section className="py-14 sm:py-20 lg:py-28">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -86,7 +86,7 @@ export default function AtolyePage() {
               Atolye & Hikaye
             </span>
             <h1
-              className="text-4xl lg:text-6xl text-cream mb-6"
+              className="text-3xl sm:text-4xl lg:text-6xl text-cream mb-6"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
               Üç Kuşak, Bir Tutku
@@ -100,11 +100,11 @@ export default function AtolyePage() {
       </section>
 
       {/* Timeline */}
-      <section className="py-16 lg:py-24">
-        <div className="max-w-[1000px] mx-auto px-6 lg:px-12">
+      <section className="py-12 sm:py-16 lg:py-24">
+        <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-12">
           <AnimatedSection>
             <h2
-              className="text-2xl lg:text-3xl text-center text-cream mb-16"
+              className="text-xl sm:text-2xl lg:text-3xl text-center text-cream mb-10 sm:mb-16"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
               Yolculuğumuz
@@ -122,7 +122,7 @@ export default function AtolyePage() {
                 direction={i % 2 === 0 ? "left" : "right"}
               >
                 <div
-                  className={`relative flex items-start gap-8 mb-16 lg:mb-20 ${
+                  className={`relative flex items-start gap-6 sm:gap-8 mb-10 sm:mb-16 lg:mb-20 ${
                     i % 2 === 0
                       ? "lg:flex-row"
                       : "lg:flex-row-reverse"
@@ -140,7 +140,7 @@ export default function AtolyePage() {
                     }`}
                   >
                     <span
-                      className="text-4xl lg:text-5xl gold-gradient-text font-bold block mb-2"
+                      className="text-3xl sm:text-4xl lg:text-5xl gold-gradient-text font-bold block mb-2"
                       style={{ fontFamily: "var(--font-playfair)" }}
                     >
                       {item.year}
@@ -166,11 +166,11 @@ export default function AtolyePage() {
       </section>
 
       {/* Atelier Photo */}
-      <section className="py-16 lg:py-24 bg-card">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+      <section className="py-12 sm:py-16 lg:py-24 bg-card">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <AnimatedSection>
             <ImagePlaceholder
-              aspectRatio="aspect-[21/9]"
+              aspectRatio="aspect-[4/3] sm:aspect-[16/9] lg:aspect-[21/9]"
               label="Nişantaşı Atölyemiz"
               glow
             />
@@ -179,15 +179,15 @@ export default function AtolyePage() {
       </section>
 
       {/* Production Steps */}
-      <section className="py-24 lg:py-32">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+      <section className="py-16 sm:py-24 lg:py-32">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <AnimatedSection>
-            <div className="text-center mb-16 lg:mb-24">
+            <div className="text-center mb-10 sm:mb-16 lg:mb-24">
               <span className="text-[11px] tracking-[0.4em] text-gold/60 uppercase block mb-4">
                 Üretim Süreci
               </span>
               <h2
-                className="text-3xl lg:text-4xl text-cream"
+                className="text-2xl sm:text-3xl lg:text-4xl text-cream"
                 style={{ fontFamily: "var(--font-playfair)" }}
               >
                 Sanatın 4 Aşaması
@@ -195,13 +195,13 @@ export default function AtolyePage() {
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 lg:gap-12">
             {productionSteps.map((step, i) => (
               <AnimatedSection key={step.step} delay={i * 0.15}>
-                <div className="bg-card border border-border p-8 lg:p-10 hover:border-gold/20 transition-all duration-1000">
-                  <div className="flex items-start gap-6">
+                <div className="bg-card border border-border p-5 sm:p-8 lg:p-10 hover:border-gold/20 transition-all duration-1000">
+                  <div className="flex items-start gap-4 sm:gap-6">
                     <span
-                      className="text-4xl lg:text-5xl gold-gradient-text font-bold shrink-0"
+                      className="text-3xl sm:text-4xl lg:text-5xl gold-gradient-text font-bold shrink-0"
                       style={{ fontFamily: "var(--font-playfair)" }}
                     >
                       {step.step}

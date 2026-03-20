@@ -29,8 +29,8 @@ export default function MagazaPage() {
   return (
     <>
       {/* Hero */}
-      <section className="py-20 lg:py-28">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
+      <section className="py-14 sm:py-20 lg:py-28">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -40,7 +40,7 @@ export default function MagazaPage() {
               Nişantaşı, İstanbul
             </span>
             <h1
-              className="text-4xl lg:text-6xl text-cream mb-6"
+              className="text-3xl sm:text-4xl lg:text-6xl text-cream mb-6"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
               Mağazamız
@@ -54,8 +54,8 @@ export default function MagazaPage() {
       </section>
 
       {/* Image Slider */}
-      <section className="pb-16 lg:pb-24">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+      <section className="pb-12 sm:pb-16 lg:pb-24">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <AnimatedSection>
             <div className="relative overflow-hidden">
               <AnimatePresence mode="wait">
@@ -67,7 +67,7 @@ export default function MagazaPage() {
                   transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                 >
                   <ImagePlaceholder
-                    aspectRatio="aspect-[16/9]"
+                    aspectRatio="aspect-[4/3] sm:aspect-[16/9]"
                     label={storeImages[currentSlide].label}
                     glow
                   />
@@ -75,10 +75,10 @@ export default function MagazaPage() {
               </AnimatePresence>
 
               {/* Navigation */}
-              <div className="absolute bottom-6 right-6 flex items-center gap-4">
+              <div className="absolute bottom-4 sm:bottom-6 right-4 sm:right-6 flex items-center gap-3 sm:gap-4">
                 <button
                   onClick={prevSlide}
-                  className="w-10 h-10 border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-black transition-all duration-700"
+                  className="w-11 h-11 border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-black transition-all duration-700"
                 >
                   <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
                     <path
@@ -94,7 +94,7 @@ export default function MagazaPage() {
                 </span>
                 <button
                   onClick={nextSlide}
-                  className="w-10 h-10 border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-black transition-all duration-700"
+                  className="w-11 h-11 border border-gold/30 flex items-center justify-center text-gold hover:bg-gold hover:text-black transition-all duration-700"
                 >
                   <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
                     <path
@@ -107,7 +107,7 @@ export default function MagazaPage() {
               </div>
 
               {/* Slide label */}
-              <div className="absolute bottom-6 left-6">
+              <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6">
                 <span className="text-[11px] tracking-[0.2em] text-cream/40 uppercase">
                   {storeImages[currentSlide].label}
                 </span>
@@ -118,12 +118,12 @@ export default function MagazaPage() {
       </section>
 
       {/* Store Info */}
-      <section className="py-16 lg:py-24 bg-card">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <section className="py-12 sm:py-16 lg:py-24 bg-card">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 lg:gap-12">
             <AnimatedSection delay={0}>
-              <div className="border border-border p-8 lg:p-10 hover:border-gold/20 transition-all duration-1000">
-                <div className="mb-6">
+              <div className="border border-border p-5 sm:p-8 lg:p-10 hover:border-gold/20 transition-all duration-1000">
+                <div className="mb-4 sm:mb-6">
                   <svg
                     width="24"
                     height="24"
@@ -156,8 +156,8 @@ export default function MagazaPage() {
             </AnimatedSection>
 
             <AnimatedSection delay={0.15}>
-              <div className="border border-border p-8 lg:p-10 hover:border-gold/20 transition-all duration-1000">
-                <div className="mb-6">
+              <div className="border border-border p-5 sm:p-8 lg:p-10 hover:border-gold/20 transition-all duration-1000">
+                <div className="mb-4 sm:mb-6">
                   <svg
                     width="24"
                     height="24"
@@ -195,8 +195,8 @@ export default function MagazaPage() {
             </AnimatedSection>
 
             <AnimatedSection delay={0.3}>
-              <div className="border border-border p-8 lg:p-10 hover:border-gold/20 transition-all duration-1000">
-                <div className="mb-6">
+              <div className="border border-border p-5 sm:p-8 lg:p-10 hover:border-gold/20 transition-all duration-1000">
+                <div className="mb-4 sm:mb-6">
                   <svg
                     width="24"
                     height="24"
@@ -230,11 +230,11 @@ export default function MagazaPage() {
       </section>
 
       {/* Map Placeholder */}
-      <section className="py-16 lg:py-24">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+      <section className="py-12 sm:py-16 lg:py-24">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
           <AnimatedSection>
-            <div className="relative">
-              <div className="image-placeholder aspect-[21/9] bg-card border border-border">
+            <div className="relative overflow-hidden">
+              <div className="image-placeholder aspect-[4/3] sm:aspect-[16/9] lg:aspect-[21/9] bg-card border border-border">
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
                   <svg
                     width="40"
@@ -261,8 +261,8 @@ export default function MagazaPage() {
       </section>
 
       {/* Appointment CTA */}
-      <section className="py-16 lg:py-20 border-t border-border">
-        <div className="max-w-[800px] mx-auto px-6 text-center">
+      <section className="py-12 sm:py-16 lg:py-20 border-t border-border">
+        <div className="max-w-[800px] mx-auto px-4 sm:px-6 text-center">
           <AnimatedSection>
             <h3
               className="text-2xl lg:text-3xl text-cream mb-4"
@@ -276,7 +276,7 @@ export default function MagazaPage() {
             </p>
             <a
               href="tel:+902122408787"
-              className="inline-block px-10 py-4 border border-gold/40 text-gold text-[11px] tracking-[0.3em] uppercase hover:bg-gold hover:text-black transition-all duration-1000"
+              className="inline-block px-8 sm:px-10 py-4 border border-gold/40 text-gold text-[11px] tracking-[0.3em] uppercase hover:bg-gold hover:text-black transition-all duration-1000 min-h-[44px]"
             >
               Hemen Arayın
             </a>

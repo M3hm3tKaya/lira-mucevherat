@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-border">
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex flex-col items-start">
@@ -57,7 +57,7 @@ export default function Navbar() {
           {/* Mobile Hamburger */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden flex flex-col gap-[6px] p-2"
+            className="lg:hidden flex flex-col gap-[6px] p-3 min-w-[44px] min-h-[44px] items-center justify-center"
             aria-label="Menu"
           >
             <motion.span
@@ -89,7 +89,7 @@ export default function Navbar() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="lg:hidden overflow-hidden bg-black border-b border-border"
           >
-            <div className="px-6 py-8 flex flex-col gap-6">
+            <div className="px-4 sm:px-6 py-8 flex flex-col gap-2">
               {links.map((link, i) => (
                 <motion.div
                   key={link.href}
@@ -101,7 +101,7 @@ export default function Navbar() {
                     href={link.href}
                     onClick={() => setIsOpen(false)}
                     className={clsx(
-                      "text-sm tracking-[0.2em] uppercase",
+                      "text-sm tracking-[0.2em] uppercase block py-3 min-h-[44px] flex items-center",
                       pathname === link.href
                         ? "text-gold"
                         : "text-cream/70"

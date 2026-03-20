@@ -29,8 +29,8 @@ export default function IletisimPage() {
   return (
     <>
       {/* Hero */}
-      <section className="py-20 lg:py-28">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
+      <section className="py-14 sm:py-20 lg:py-28">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -40,7 +40,7 @@ export default function IletisimPage() {
               İletişim
             </span>
             <h1
-              className="text-4xl lg:text-6xl text-cream mb-6"
+              className="text-3xl sm:text-4xl lg:text-6xl text-cream mb-6"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
               Bize Ulaşın
@@ -54,9 +54,9 @@ export default function IletisimPage() {
       </section>
 
       {/* Contact Info + Form */}
-      <section className="pb-24 lg:pb-32">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 lg:gap-20">
+      <section className="pb-16 sm:pb-24 lg:pb-32">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 sm:gap-16 lg:gap-20">
             {/* Left - Contact Info */}
             <div className="lg:col-span-2">
               <AnimatedSection direction="left">
@@ -261,7 +261,7 @@ export default function IletisimPage() {
             {/* Right - Form */}
             <div className="lg:col-span-3">
               <AnimatedSection direction="right" delay={0.2}>
-                <div className="bg-card border border-border p-8 lg:p-12">
+                <div className="bg-card border border-border p-5 sm:p-8 lg:p-12">
                   <h2
                     className="text-xl lg:text-2xl text-cream mb-8"
                     style={{ fontFamily: "var(--font-playfair)" }}
@@ -281,7 +281,7 @@ export default function IletisimPage() {
                           required
                           value={formData.name}
                           onChange={handleChange}
-                          className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm"
+                          className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm min-h-[44px]"
                           placeholder="Adınız Soyadınız"
                         />
                       </div>
@@ -294,7 +294,7 @@ export default function IletisimPage() {
                           name="phone"
                           value={formData.phone}
                           onChange={handleChange}
-                          className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm"
+                          className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm min-h-[44px]"
                           placeholder="+90 5XX XXX XX XX"
                         />
                       </div>
@@ -310,7 +310,7 @@ export default function IletisimPage() {
                         required
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm"
+                        className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm min-h-[44px]"
                         placeholder="ornek@email.com"
                       />
                     </div>
@@ -324,7 +324,7 @@ export default function IletisimPage() {
                         required
                         value={formData.subject}
                         onChange={handleChange}
-                        className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm appearance-none cursor-pointer"
+                        className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm appearance-none cursor-pointer min-h-[44px]"
                       >
                         <option value="" className="bg-black">
                           Konu seçin...
@@ -365,7 +365,7 @@ export default function IletisimPage() {
                     <div className="pt-2">
                       <button
                         type="submit"
-                        className="w-full lg:w-auto px-12 py-4 bg-gold text-black text-[11px] tracking-[0.3em] uppercase font-medium hover:bg-gold-light transition-colors duration-1000"
+                        className="w-full sm:w-auto px-10 sm:px-12 py-4 bg-gold text-black text-[11px] tracking-[0.3em] uppercase font-medium hover:bg-gold-light transition-colors duration-1000 min-h-[44px]"
                       >
                         Mesaj Gönderin
                       </button>

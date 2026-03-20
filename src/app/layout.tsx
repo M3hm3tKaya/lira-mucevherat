@@ -21,7 +21,7 @@ export default function RootLayout({
       lang="tr"
       className={`${playfair.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col overflow-x-hidden">
         <SmoothScroll />
         <Navbar />
         <main className="flex-1 pt-20">{children}</main>

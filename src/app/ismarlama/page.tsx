@@ -53,8 +53,8 @@ export default function IsmarlamaPage() {
   return (
     <>
       {/* Hero */}
-      <section className="py-20 lg:py-28">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
+      <section className="py-14 sm:py-20 lg:py-28">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ export default function IsmarlamaPage() {
               Ismarlama Tasarım
             </span>
             <h1
-              className="text-4xl lg:text-6xl text-cream mb-6"
+              className="text-3xl sm:text-4xl lg:text-6xl text-cream mb-6"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
               Sizin İçin, Size Özel
@@ -79,15 +79,15 @@ export default function IsmarlamaPage() {
       </section>
 
       {/* 3 Steps */}
-      <section className="py-16 lg:py-24 bg-card">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <section className="py-12 sm:py-16 lg:py-24 bg-card">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {steps.map((step, i) => (
               <AnimatedSection key={step.number} delay={i * 0.2}>
-                <div className="relative p-8 lg:p-10 border border-border hover:border-gold/20 transition-all duration-1000">
+                <div className="relative p-6 sm:p-8 lg:p-10 border border-border hover:border-gold/20 transition-all duration-1000">
                   {/* Step number */}
                   <span
-                    className="text-5xl lg:text-6xl gold-gradient-text font-bold block mb-6"
+                    className="text-4xl sm:text-5xl lg:text-6xl gold-gradient-text font-bold block mb-4 sm:mb-6"
                     style={{ fontFamily: "var(--font-playfair)" }}
                   >
                     {step.number}
@@ -114,8 +114,8 @@ export default function IsmarlamaPage() {
       </section>
 
       {/* Form */}
-      <section className="py-24 lg:py-32">
-        <div className="max-w-[800px] mx-auto px-6 lg:px-12">
+      <section className="py-16 sm:py-24 lg:py-32">
+        <div className="max-w-[800px] mx-auto px-4 sm:px-6 lg:px-12">
           <AnimatedSection>
             <div className="text-center mb-12">
               <span className="text-[11px] tracking-[0.4em] text-gold/60 uppercase block mb-4">
@@ -144,7 +144,7 @@ export default function IsmarlamaPage() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm"
+                    className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm min-h-[44px]"
                     placeholder="Adınız Soyadınız"
                   />
                 </div>
@@ -158,7 +158,7 @@ export default function IsmarlamaPage() {
                     required
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm"
+                    className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm min-h-[44px]"
                     placeholder="+90 5XX XXX XX XX"
                   />
                 </div>
@@ -175,7 +175,7 @@ export default function IsmarlamaPage() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm"
+                  className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm min-h-[44px]"
                   placeholder="ornek@email.com"
                 />
               </div>
@@ -191,7 +191,7 @@ export default function IsmarlamaPage() {
                     required
                     value={formData.jewelryType}
                     onChange={handleChange}
-                    className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm appearance-none cursor-pointer"
+                    className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm appearance-none cursor-pointer min-h-[44px]"
                   >
                     <option value="" className="bg-black">
                       Seçin...
@@ -224,7 +224,7 @@ export default function IsmarlamaPage() {
                     name="material"
                     value={formData.material}
                     onChange={handleChange}
-                    className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm appearance-none cursor-pointer"
+                    className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm appearance-none cursor-pointer min-h-[44px]"
                   >
                     <option value="" className="bg-black">
                       Seçin...
@@ -264,7 +264,7 @@ export default function IsmarlamaPage() {
                     name="stone"
                     value={formData.stone}
                     onChange={handleChange}
-                    className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm appearance-none cursor-pointer"
+                    className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm appearance-none cursor-pointer min-h-[44px]"
                   >
                     <option value="" className="bg-black">
                       Seçin...
@@ -300,7 +300,7 @@ export default function IsmarlamaPage() {
                     name="budget"
                     value={formData.budget}
                     onChange={handleChange}
-                    className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm appearance-none cursor-pointer"
+                    className="w-full bg-transparent text-cream py-3 gold-border-bottom text-sm appearance-none cursor-pointer min-h-[44px]"
                   >
                     <option value="" className="bg-black">
                       Seçin...
@@ -343,7 +343,7 @@ export default function IsmarlamaPage() {
               <div className="text-center pt-4">
                 <button
                   type="submit"
-                  className="inline-block px-12 py-4 bg-gold text-black text-[11px] tracking-[0.3em] uppercase font-medium hover:bg-gold-light transition-colors duration-1000"
+                  className="inline-block w-full sm:w-auto px-10 sm:px-12 py-4 bg-gold text-black text-[11px] tracking-[0.3em] uppercase font-medium hover:bg-gold-light transition-colors duration-1000 min-h-[44px]"
                 >
                   Talep Gönderin
                 </button>

@@ -10,8 +10,8 @@ export default function KoleksiyonlarPage() {
   return (
     <>
       {/* Hero */}
-      <section className="py-20 lg:py-28">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-12 text-center">
+      <section className="py-14 sm:py-20 lg:py-28">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -21,7 +21,7 @@ export default function KoleksiyonlarPage() {
               Tüm Koleksiyonlar
             </span>
             <h1
-              className="text-4xl lg:text-6xl text-cream mb-6"
+              className="text-3xl sm:text-4xl lg:text-6xl text-cream mb-6"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
               Koleksiyonlar
@@ -35,7 +35,7 @@ export default function KoleksiyonlarPage() {
       </section>
 
       {/* Collections - Vertical full-width */}
-      <section className="pb-24 lg:pb-32">
+      <section className="pb-16 sm:pb-24 lg:pb-32">
         <div className="flex flex-col">
           {collections.map((col, i) => (
             <AnimatedSection key={col.slug} delay={0.1}>
@@ -45,7 +45,7 @@ export default function KoleksiyonlarPage() {
               >
                 <div className="relative overflow-hidden">
                   <ImagePlaceholder
-                    aspectRatio="aspect-[21/9]"
+                    aspectRatio="aspect-[16/9] sm:aspect-[21/9]"
                     label={col.name}
                     className="transition-transform duration-[3000ms] group-hover:scale-[1.02]"
                   />
@@ -54,13 +54,13 @@ export default function KoleksiyonlarPage() {
                   <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
 
                   {/* Content */}
-                  <div className="absolute inset-0 flex items-center px-8 lg:px-20">
+                  <div className="absolute inset-0 flex items-end sm:items-center px-4 sm:px-8 lg:px-20 pb-6 sm:pb-0">
                     <div>
-                      <span className="text-[10px] tracking-[0.4em] text-gold/60 uppercase block mb-3">
+                      <span className="text-[10px] tracking-[0.4em] text-gold/60 uppercase block mb-2 sm:mb-3">
                         {String(i + 1).padStart(2, "0")}
                       </span>
                       <h2
-                        className="text-4xl lg:text-6xl text-cream mb-3"
+                        className="text-2xl sm:text-4xl lg:text-6xl text-cream mb-2 sm:mb-3"
                         style={{ fontFamily: "var(--font-playfair)" }}
                       >
                         {col.name}
@@ -71,7 +71,7 @@ export default function KoleksiyonlarPage() {
                       <p className="text-sm text-cream/40 max-w-md leading-relaxed hidden lg:block">
                         {col.description}
                       </p>
-                      <div className="mt-6 flex items-center gap-3 text-gold text-[11px] tracking-[0.2em] uppercase opacity-60 group-hover:opacity-100 transition-opacity duration-1000">
+                      <div className="mt-4 sm:mt-6 flex items-center gap-3 text-gold text-[11px] tracking-[0.2em] uppercase opacity-60 group-hover:opacity-100 transition-opacity duration-1000 min-h-[44px]">
                         <span>Koleksiyonu Görüntüle</span>
                         <svg
                           width="24"

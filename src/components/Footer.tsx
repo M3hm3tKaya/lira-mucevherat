@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-black border-t border-border">
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-16 lg:py-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 py-12 lg:py-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Brand */}
           <div className="lg:col-span-1">
             <h3
@@ -69,7 +69,7 @@ export default function Footer() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-sm text-cream/50 hover:text-cream transition-colors duration-700"
+                  className="text-sm text-cream/50 hover:text-cream transition-colors duration-700 py-1"
                 >
                   {link.label}
                 </Link>
@@ -103,7 +103,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="mt-12 lg:mt-16 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[11px] text-cream/30 tracking-wider">
             &copy; 2024 Lira Mücevherat. Tüm hakları saklıdır.
           </p>
